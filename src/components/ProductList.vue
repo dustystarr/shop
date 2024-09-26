@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     addToCart(product) {
-      this.$emit('add-to-cart', product); // Отправляем событие добавления товара
+      this.$emit('add-to-cart', product); 
     },
   },
 };
