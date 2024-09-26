@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  props: ['totalAmount'], // Получаем общую сумму заказа как prop
+  props: ['totalAmount'], 
   data() {
     return {
       name: '',
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     submitOrder() {
-      // Логика оформления заказа, например отправка данных на сервер
+
       alert(`Заказ оформлен! Имя: ${this.name}, Email: ${this.email}, Адрес: ${this.address}, Сумма: ${this.totalAmount} ₽`);
     },
   },
