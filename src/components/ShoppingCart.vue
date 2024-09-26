@@ -6,7 +6,7 @@
         <p>{{ item.name }} ({{ item.quantity }}) - {{ item.price }} ₽</p>
         <button @click="removeFromCart(item.id)">Удалить</button>
       </div>
-      <h3>Общая сумма: {{ totalPrice }} ₽</h3>
+      <h3>Общая сумма: {{ totalPrice }} тнг</h3>
     </div>
     <p v-else>Корзина пуста</p>
   </div>
