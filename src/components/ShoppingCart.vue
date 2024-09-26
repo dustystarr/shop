@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'ShoppingCart', // Используем многословное имя компонента
+  name: 'ShoppingCart', 
   props: ['cart'],
   computed: {
     totalPrice() {
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     removeFromCart(productId) {
-      this.$emit('remove-from-cart', productId); // Отправляем событие удаления товара
+      this.$emit('remove-from-cart', productId); 
     },
   },
 };
