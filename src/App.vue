@@ -15,23 +15,23 @@ import OrderForm from './components/OrderForm.vue';
 export default {
   components: {
     ProductList,
-    ShoppingCart,  // Используем многословное имя
+    ShoppingCart,  
     OrderForm,
   },
   data() {
     return {
-      cart: [], // Корзина для товаров
+      cart: [], 
     };
   },
   computed: {
     totalAmount() {
-      // Вычисляем общую сумму товаров в корзине
+      
       return this.cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     },
   },
   methods: {
     addToCart(product) {
-      // Добавление товара в корзину
+      
       const existingProduct = this.cart.find(item => item.id === product.id);
       if (existingProduct) {
         existingProduct.quantity += 1;
@@ -40,7 +40,7 @@ export default {
       }
     },
     removeFromCart(productId) {
-      // Удаление товара из корзины
+     
       this.cart = this.cart.filter(item => item.id !== productId);
     },
   },
