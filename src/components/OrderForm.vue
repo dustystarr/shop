@@ -14,7 +14,7 @@
         <label for="address">Адрес доставки:</label>
         <input type="text" v-model="address" required />
       </div>
-      <h3>Сумма заказа: {{ totalAmount }} ₽</h3>
+      <h3>Сумма заказа: {{ totalAmount }} тнг</h3>
       <button type="submit">Оформить заказ</button>
     </form>
   </div>
